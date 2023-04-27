@@ -19,6 +19,10 @@
     <!-- Button trigger modal -->
     <div class="container">
         <ul class="list-group list-group-flush">
+            <li class="list-group-item"></li>
+            <li class="list-group-item">Список броней</li>
+
+
             {%for row in rows%}
             <li class="list-group-item">{{row[0]}} --- {{row[1]}}</li>
             {%endfor%}
@@ -34,7 +38,7 @@
                 <div class="modal-content">
                     <div class="modal-header">
                         <h1 class="modal-title fs-5" id="exampleModalLabel">Удаление записи</h1>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+
                     </div>
                     <div class="modal-body">
                         <form action="" method="post">
@@ -64,7 +68,7 @@
                 <div class="modal-content">
                     <div class="modal-header">
                         <h1 class="modal-title fs-5" id="exampleModalLabel">Новая запись</h1>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+
                     </div>
                     <div class="modal-body">
                         <form action="" method="post">
