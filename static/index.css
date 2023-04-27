@@ -1,0 +1,85 @@
+body {
+    background-color: black;
+}
+
+#mainbtn {
+    margin-left: 151px;
+    margin-top: 10px;
+    width: 100px;
+    height: 35px;
+    text-align: center;
+
+}
+
+.modal-content {
+    color: white;
+    background-color: black;
+}
+
+
+.modal-content h1 {
+    color: white;
+}
+
+.mb-3 label {
+    color: white;
+}
+
+.mb-3 textarea {
+    background-color: black;
+}
+
+
+.mb-3 textarea:focus {
+    background-color: black;
+    color: white;
+}
+
+
+.list-group {
+
+    width: 400px;
+}
+
+.list-group-item {
+    text-align: center;
+    background-color: black;
+    color: white;
+}
+
+.container {
+    position: relative;
+    margin-top: 100px;
+    margin-left: 450px;
+}
+
+#pcnum {
+    color: white;
+    text-align: center;
+    background-color: black;
+    width: 35px;
+    display: inline-block;
+    margin-left: 10px;
+}
+
+#time {
+    color: white;
+    background-color: black;
+    width: 55px;
+    display: inline-block;
+    margin-left: 10px;
+    text-align: center;
+}
+
+#comm {
+    color: white;
+    text-align: center;
+    background-color: black;
+    width: 110px;
+    display: inline-block;
+    margin-left: 10px;
+}
+
+.mb-3 label {
+    margin-left: 10px;
+}
