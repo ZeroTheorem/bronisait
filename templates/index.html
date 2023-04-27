@@ -19,38 +19,70 @@
     <!-- Button trigger modal -->
     <div class="container">
         <ul class="list-group list-group-flush">
-            {%for x in test_bd_response%}
-            <li class="list-group-item">{{x[0]}} --- {{x[1]}}</li>
+            {%for row in rows%}
+            <li class="list-group-item">{{row[0]}} --- {{row[1]}}</li>
             {%endfor%}
 
         </ul>
 
-        <button type="button" class="btn btn-outline-light" data-bs-toggle="modal" data-bs-target="#exampleModal"
-            id="mainbtn" data-bs-whatever="@getbootstrap">Добавить</button>
+        <button type="button" class="btn btn-outline-danger" data-bs-toggle="modal" data-bs-target="#exampleModal_2"
+            id="mainbtn" data-bs-whatever="@getbootstrap">Удлить</button>
+
+        <div class="modal fade" id="exampleModal_2" tabindex="-1" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="exampleModalLabel">Удаление записи</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <form action="" method="post">
+                            <div class="mb-3">
+                                <label for="message-text" class="col-form-label" id=mylable>PC:</label>
+                                <input class="form-control form-control-sm" type="text" id="pcnum" name="Delete"
+                                    autocomplete="off" />
+
+                                <div class="modal-footer">
+
+                                    <button type="button" class="btn btn-outline-danger"
+                                        data-bs-dismiss="modal">Отмена</button>
+                                    <input type="submit" class="btn btn-outline-primary" value="Удалить">
+
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button type="button" class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#exampleModal"
+            id="mainbtn_2" data-bs-whatever="@getbootstrap">Добавить</button>
 
         <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="modal-dialog">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <h1 class="modal-title fs-5" id="exampleModalLabel">Новое запись</h1>
+                        <h1 class="modal-title fs-5" id="exampleModalLabel">Новая запись</h1>
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body">
                         <form action="" method="post">
                             <div class="mb-3">
                                 <label for="message-text" class="col-form-label">PC:</label>
-                                <input class="form-control form-control-sm" type="text" placeholder="PC" id="pcnum"
-                                    name="PC" />
+                                <input class="form-control form-control-sm" type="text" id="pcnum" name="PC"
+                                    autocomplete="off" />
                                 <label for="message-text" class="col-form-label">Время:</label>
-                                <input class="form-control form-control-sm" type="text" placeholder="PC" id="time"
-                                    name="Time" />
+                                <input class="form-control form-control-sm" type="text" id="time" name="Time"
+                                    autocomplete="off" />
                                 <label for="message-text" class="col-form-label">Комментарий:</label>
-                                <input class="form-control form-control-sm" type="text" placeholder="PC" id="comm"
-                                    name="Comm" />
+                                <input class="form-control form-control-sm" type="text" id="comm" name="Comm"
+                                    autocomplete="off" />
                                 <div class="modal-footer">
-                                    <button type="button" class="btn btn-secondary"
+
+                                    <button type="button" class="btn btn-outline-danger"
                                         data-bs-dismiss="modal">Отмена</button>
-                                    <input type="submit" class="btn btn-primary" value="Создать">
+                                    <input type="submit" class="btn btn-outline-primary" value=" Создать">
 
                                 </div>
                             </div>
@@ -60,5 +92,6 @@
             </div>
         </div>
     </div>
+</body>
 
 </html>

@@ -2,8 +2,21 @@ body {
     background-color: black;
 }
 
+#mylable {
+    margin-left: 200px;
+}
+
 #mainbtn {
-    margin-left: 151px;
+    margin-left: 102px;
+    margin-top: 10px;
+    width: 100px;
+    height: 35px;
+    text-align: center;
+
+}
+
+#mainbtn_2 {
+
     margin-top: 10px;
     width: 100px;
     height: 35px;
@@ -25,15 +38,6 @@ body {
     color: white;
 }
 
-.mb-3 textarea {
-    background-color: black;
-}
-
-
-.mb-3 textarea:focus {
-    background-color: black;
-    color: white;
-}
 
 
 .list-group {
@@ -48,7 +52,7 @@ body {
 }
 
 .container {
-    position: relative;
+
     margin-top: 100px;
     margin-left: 450px;
 }
@@ -60,6 +64,7 @@ body {
     width: 35px;
     display: inline-block;
     margin-left: 10px;
+    margin-bottom: 17px;
 }
 
 #time {
@@ -69,6 +74,7 @@ body {
     display: inline-block;
     margin-left: 10px;
     text-align: center;
+    margin-bottom: 17px;
 }
 
 #comm {
@@ -78,8 +84,14 @@ body {
     width: 110px;
     display: inline-block;
     margin-left: 10px;
+    margin-bottom: 17px;
 }
 
 .mb-3 label {
     margin-left: 10px;
+}
+
+
+.modal-footer input {
+    margin-right: 124px;
 }
