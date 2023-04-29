@@ -20,7 +20,6 @@ def main_page():
                 conn.execute(update_reqst)
                 conn.commit()
             return redirect("/")
-
         else:
             result = request.form
             with engine.connect() as conn:

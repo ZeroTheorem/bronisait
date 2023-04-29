@@ -19,15 +19,14 @@
     <!-- Button trigger modal -->
     <div class="container">
         <ul class="list-group list-group-flush">
-            <li class="list-group-item"></li>
-            <li class="list-group-item">Список броней</li>
-
-
             {%for row in rows%}
-            <li class="list-group-item">{{row[0]}} --- {{row[1]}}</li>
+            <li class="list-group-item">
+                <p class="lead">{{row[0]}} --- {{row[1]}}</p>
+            </li>
             {%endfor%}
-
         </ul>
+
+
 
         <button type="button" class="btn btn-outline-danger" data-bs-toggle="modal" data-bs-target="#exampleModal_2"
             id="mainbtn" data-bs-whatever="@getbootstrap">Удлить</button>
